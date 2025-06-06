@@ -1,0 +1,14 @@
+com\example\wsdlUPN\Subtract.class
+com\example\wsdlUPN\package-info.class
+com\example\wsdlUPN\DivideResponse.class
+com\example\wsdlUPN\Divide.class
+com\example\demo\service\SoapClient.class
+exampleTutorialYoutybe\com\example\wsdlUPN\package-info.class
+com\example\demo\controller\SoapController.class
+com\example\wsdlUPN\AddResponse.class
+com\example\wsdlUPN\Add.class
+com\example\wsdlUPN\ObjectFactory.class
+com\example\wsdlUPN\Multiply.class
+com\example\demo\SoapPruebasApplication.class
+com\example\wsdlUPN\MultiplyResponse.class
+com\example\wsdlUPN\SubtractResponse.class
