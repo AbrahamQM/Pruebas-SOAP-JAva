@@ -10,6 +10,7 @@ import org.springframework.ws.soap.client.core.SoapActionCallback;
 public class SoapClient extends WebServiceGatewaySupport {
 //* ruta del servicio soap que vamos a usar de ejemplo: http://www.dneonline.com/calculator.asmx
 //* ruta del wsdl de ejemplo para esta prueba: http://www.dneonline.com/calculator.asmx?WSDL
+//* Ruta el repo del video https://github.com/UnProgramadorNaceOfficial/spring-boot-soap-maven/blob/main/src/main/java/com/soap/SpringBootSoapApplication.java
 
     public AddResponse suma(int numberA, int numberB){
         Add addRequest = new Add();
