@@ -6,7 +6,7 @@
 //
 
 
-package com.example.wsdlUPN;
+package com.example.demo.wsdlUPN;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

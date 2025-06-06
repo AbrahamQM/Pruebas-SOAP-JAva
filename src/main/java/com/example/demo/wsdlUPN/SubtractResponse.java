@@ -6,10 +6,11 @@
 //
 
 
-package exampleTutorialYoutybe.com.example.wsdlUPN;
+package com.example.demo.wsdlUPN;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -24,8 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="intA" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="intB" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="SubtractResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,45 +36,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "intA",
-    "intB"
+    "subtractResult"
 })
-@XmlRootElement(name = "Add")
-public class Add {
+@XmlRootElement(name = "SubtractResponse")
+public class SubtractResponse {
 
-    protected int intA;
-    protected int intB;
+    @XmlElement(name = "SubtractResult")
+    protected int subtractResult;
 
     /**
-     * Obtiene el valor de la propiedad intA.
+     * Obtiene el valor de la propiedad subtractResult.
      * 
      */
-    public int getIntA() {
-        return intA;
+    public int getSubtractResult() {
+        return subtractResult;
     }
 
     /**
-     * Define el valor de la propiedad intA.
+     * Define el valor de la propiedad subtractResult.
      * 
      */
-    public void setIntA(int value) {
-        this.intA = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad intB.
-     * 
-     */
-    public int getIntB() {
-        return intB;
-    }
-
-    /**
-     * Define el valor de la propiedad intB.
-     * 
-     */
-    public void setIntB(int value) {
-        this.intB = value;
+    public void setSubtractResult(int value) {
+        this.subtractResult = value;
     }
 
 }

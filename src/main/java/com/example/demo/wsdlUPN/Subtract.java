@@ -6,11 +6,10 @@
 //
 
 
-package com.example.wsdlUPN;
+package com.example.demo.wsdlUPN;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="SubtractResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="intA" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="intB" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,28 +36,45 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "subtractResult"
+    "intA",
+    "intB"
 })
-@XmlRootElement(name = "SubtractResponse")
-public class SubtractResponse {
+@XmlRootElement(name = "Subtract")
+public class Subtract {
 
-    @XmlElement(name = "SubtractResult")
-    protected int subtractResult;
+    protected int intA;
+    protected int intB;
 
     /**
-     * Obtiene el valor de la propiedad subtractResult.
+     * Obtiene el valor de la propiedad intA.
      * 
      */
-    public int getSubtractResult() {
-        return subtractResult;
+    public int getIntA() {
+        return intA;
     }
 
     /**
-     * Define el valor de la propiedad subtractResult.
+     * Define el valor de la propiedad intA.
      * 
      */
-    public void setSubtractResult(int value) {
-        this.subtractResult = value;
+    public void setIntA(int value) {
+        this.intA = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad intB.
+     * 
+     */
+    public int getIntB() {
+        return intB;
+    }
+
+    /**
+     * Define el valor de la propiedad intB.
+     * 
+     */
+    public void setIntB(int value) {
+        this.intB = value;
     }
 
 }

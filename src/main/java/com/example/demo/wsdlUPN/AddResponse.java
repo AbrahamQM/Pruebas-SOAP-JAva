@@ -6,10 +6,11 @@
 //
 
 
-package com.example.wsdlUPN;
+package com.example.demo.wsdlUPN;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -24,8 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="intA" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="intB" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="AddResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,45 +36,35 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "intA",
-    "intB"
+    "addResult"
 })
-@XmlRootElement(name = "Multiply")
-public class Multiply {
+@XmlRootElement(name = "AddResponse")
+public class AddResponse {
 
-    protected int intA;
-    protected int intB;
+    @XmlElement(name = "AddResult")
+    protected int addResult;
 
     /**
-     * Obtiene el valor de la propiedad intA.
+     * Obtiene el valor de la propiedad addResult.
      * 
      */
-    public int getIntA() {
-        return intA;
+    public int getAddResult() {
+        return addResult;
     }
 
     /**
-     * Define el valor de la propiedad intA.
+     * Define el valor de la propiedad addResult.
      * 
      */
-    public void setIntA(int value) {
-        this.intA = value;
+    public void setAddResult(int value) {
+        this.addResult = value;
     }
 
-    /**
-     * Obtiene el valor de la propiedad intB.
-     * 
-     */
-    public int getIntB() {
-        return intB;
-    }
 
-    /**
-     * Define el valor de la propiedad intB.
-     * 
-     */
-    public void setIntB(int value) {
-        this.intB = value;
-    }
+    //Creo yo el toString para verlo
 
+    @Override
+    public String toString() {
+        return  "***********************\n\naddResult=" + addResult +  "\n\n***********************\n\n";
+    }
 }

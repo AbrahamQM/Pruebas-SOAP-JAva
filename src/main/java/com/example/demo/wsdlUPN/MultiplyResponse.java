@@ -6,7 +6,7 @@
 //
 
 
-package exampleTutorialYoutybe.com.example.wsdlUPN;
+package com.example.demo.wsdlUPN;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="AddResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="MultiplyResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,28 +36,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "addResult"
+    "multiplyResult"
 })
-@XmlRootElement(name = "AddResponse")
-public class AddResponse {
+@XmlRootElement(name = "MultiplyResponse")
+public class MultiplyResponse {
 
-    @XmlElement(name = "AddResult")
-    protected int addResult;
+    @XmlElement(name = "MultiplyResult")
+    protected int multiplyResult;
 
     /**
-     * Obtiene el valor de la propiedad addResult.
+     * Obtiene el valor de la propiedad multiplyResult.
      * 
      */
-    public int getAddResult() {
-        return addResult;
+    public int getMultiplyResult() {
+        return multiplyResult;
     }
 
     /**
-     * Define el valor de la propiedad addResult.
+     * Define el valor de la propiedad multiplyResult.
      * 
      */
-    public void setAddResult(int value) {
-        this.addResult = value;
+    public void setMultiplyResult(int value) {
+        this.multiplyResult = value;
     }
 
 }

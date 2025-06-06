@@ -91,7 +91,7 @@
                 </executions>
                 <configuration>
                     <schemaLanguage>WSDL</schemaLanguage>
-                    <generateDirectory>${project.basedir}/src/main/java/exampleTutorialYoutybe</generateDirectory>
+                    <generateDirectory>${project.basedir}/src/main/java/</generateDirectory>
                     <generatePackage>com.example.wsdlUPN</generatePackage>
                     <schemas>
                         <schema>

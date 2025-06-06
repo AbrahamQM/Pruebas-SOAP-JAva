@@ -6,7 +6,7 @@
 //
 
 
-package com.example.wsdlUPN;
+package com.example.demo.wsdlUPN;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -39,8 +39,8 @@ import javax.xml.bind.annotation.XmlType;
     "intA",
     "intB"
 })
-@XmlRootElement(name = "Divide")
-public class Divide {
+@XmlRootElement(name = "Add")
+public class Add {
 
     protected int intA;
     protected int intB;
